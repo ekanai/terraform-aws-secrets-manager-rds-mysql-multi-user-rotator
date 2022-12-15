@@ -1,16 +1,11 @@
-variable "lotator_lambda_function_name" {
+variable "name" {
   type        = string
-  description = "Lotator lambda function will be created with this name."
+  description = "Lotator formation stack and lambda function will be created with this name."
 }
 
 variable "kms_key_arn" {
   type        = string
   description = "KMS ARN for Secrets Manager"
-}
-
-variable "db_cluster_name" {
-  type        = string
-  description = "Database Cluster Name"
 }
 
 variable "lambda_security_group_id" {
