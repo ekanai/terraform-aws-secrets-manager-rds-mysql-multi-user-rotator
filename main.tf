@@ -12,7 +12,7 @@ resource "aws_serverlessapplicationrepository_cloudformation_stack" "rotate_stac
 
   parameters = {
     endpoint              = "https://secretsmanager.${data.aws_region.current.name}.amazonaws.com"
-    functionName          = var.name
+    functionName          = var.lotator_lambda_function_name
     kmsKeyArn             = var.kms_key_arn
     masterSecretArn       = var.master_secretsmanager_arn
     masterSecretKmsKeyArn = var.master_secretsmanager_kms_key_arn

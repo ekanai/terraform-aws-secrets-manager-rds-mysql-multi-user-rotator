@@ -1,3 +1,8 @@
+variable "lotator_lambda_function_name" {
+  type        = string
+  description = "Lotator lambda function will be created with this name."
+}
+
 variable "kms_key_arn" {
   type        = string
   description = "KMS ARN for Secrets Manager"
